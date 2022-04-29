@@ -125,6 +125,8 @@ body {
     --brand-color: #FFB742;
     --text-color: #212529;
     --bg: #fff;
+    --tag-bg: #212529;
+    --card-bg: #fff;
     --input-color: #fff;
     --input-border: rgb(240, 236, 236);
     --card-dark-shadow: var(--card-shadow);
@@ -221,10 +223,9 @@ img.arrow {
     align-items: center;
     width: 30%;
     height: 120px;
-    background-color: var(--bg);
+    background-color: var(--card-bg);
     border-radius: 10px;
     box-shadow: var(--card-dark-shadow);
-   /*  border: 1px solid #25272b; */
 }
 
 .card-inner {
@@ -266,7 +267,8 @@ img.arrow {
     display: flex;
     justify-content: space-between;
 }
-.about-me-inner img{
+
+.about-me-inner img {
     width: 40%;
 
 }
@@ -280,7 +282,7 @@ img.arrow {
 }
 
 .tags {
-    background-color: #292B2E;
+    background-color: var(--tag-bg);
     color: var(--brand-color);
     font-weight: 600;
     font-size: 20px;
@@ -314,10 +316,11 @@ img.arrow {
     width: 100%;
 }
 
-.my-skills-inner .text-area{
+.my-skills-inner .text-area {
     width: 45%;
 }
-.my-skills-inner img{
+
+.my-skills-inner img {
     width: 40%;
 }
 
@@ -342,7 +345,7 @@ img.arrow {
 }
 
 .prt-tags {
-    background-color: #292B2E;
+    background-color: var(--tag-bg);
     color: var(--brand-color);
     font-weight: 600;
     font-size: 20px;
@@ -389,7 +392,7 @@ img.arrow {
 
 .contact-about {
     font-size: 16px;
-     width: 500px;
+    width: 500px;
 
 }
 
@@ -416,20 +419,22 @@ img.arrow {
     height: 10px;
     width: 100%;
     padding: 20px;
-    background-color: var(--input-color);
+    background-color: var(--card-bg);
     border: 1px solid var(--input-border);
     font-size: 16px;
     font-weight: 500;
-    box-shadow: var(--btn-dark-shadow);
+    box-shadow: var(--card-dark-shadow);
+    border-radius: 5px;
 }
 
 .contact-inner textarea {
     min-width: 100%;
     max-width: 400px;
     min-height: 100px;
+    border-radius: 5px;
     border: 1px solid var(--input-border);
-    background-color: var(--input-color);
-    box-shadow: var(--btn-dark-shadow);
+    background-color: var(--card-bg);
+    box-shadow: var(--card-dark-shadow);
 }
 
 .contact-inner label {
@@ -438,12 +443,13 @@ img.arrow {
     font-size: 14px;
     font-weight: 600;
 }
-.contact-form label{
+
+.contact-form label {
     padding: 10px 0 15px 0;
 }
-.form{
+
+.form {
     padding: 30px;
-    /* border: 1px solid black; */
     box-shadow: var(--card-dark-shadow);
 }
 
@@ -456,4 +462,49 @@ img.arrow {
 ::placeholder {
     font-size: 15px;
     color: var(--text-color);
+}
+
+
+
+/* ----------------Footer Section---------------- */
+
+
+
+.footer {
+    margin-top: 200px;
+    background-color: var(--footer-color);
+    padding: 50px 0 100px 0;
+}
+
+.footer-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    margin-top: 20px;
+    
+    width: 240px;
+    color: var(--footer-text);
+}
+
+.footer-list {
+    list-style: none;
+
+}
+
+.footer h3 {
+    color: var(--footer-text);
+}
+
+.footer-list-item {
+    padding-top: 20px;
+}
+
+.footer-list-link {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--footer-text);
 }
