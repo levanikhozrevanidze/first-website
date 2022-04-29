@@ -1,0 +1,22 @@
+
+.lang {
+    display: flex;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.lang a {
+
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.ka {
+    border-right: 1px solid var(--brand-color);
+
+}
+
+.lang p {
+    color: var(--text-color);
+    font-size: 16px;
+}
