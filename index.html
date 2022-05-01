@@ -6,13 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-------------Icons------------->
 
     <script src="https://kit.fontawesome.com/8148dc7ff6.js" crossorigin="anonymous"></script>
 
+    <!-------------Document Icon------------->
+
+    <link rel="shortcut icon" href="img/NOSTRA.svg" type="image/x-icon">
+
+    <!-------------Style------------->
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Nostra</title>
+    <!-------------Responsive------------->
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-------------Document Name------------->
+
+    <title>Nostra - Portfolio</title>
 </head>
 
 <body>
@@ -41,30 +53,39 @@
                         <li class="menu-list-item">
                             <a class="menu-list-link" href="#Contact">Contact</a>
                         </li>
+                        <li class="menu-list-item">
+                            <div class="tools">
+                                <div class="theme">
+                                    <img src="img/sun.svg" alt="theme" id="icon">
+                                </div>
+                                <!--  <div class="Github-link">
+                                    <a href="https://github.com/levanikhozrevanidze" target="_blank">
+                                        <i class="fa-brands fa-github fa-xl"></i>
+                                    </a>
+                                </div> -->
+                                <div class="lang">
+                                    <a class="ka" href="ka.html">
+                                        <p>KA</p>
+                                    </a>
+                                    <a href="index.html">
+                                        <p>EN</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
-                <div class="tools">
-                    <div class="theme">
-                        <img src="img/sun.svg" alt="theme" id="icon">
-                    </div>
-                    <div class="Github-link">
-                        <a href="https://github.com/levanikhozrevanidze" target="_blank">
-                            <i class="fa-brands fa-github fa-xl"></i>
-                        </a>
-                    </div>
-                    <div class="lang">
-                        <a class="ka" href="ka.html">
-                            <p>KA</p>
-                        </a>
-                        <a href="index.html">
-                            <p>EN</p>
-                        </a>
-                    </div>
-
+                <div class="header-burger">
+                    <span class="header-burger-item"></span>
+                    <span class="header-burger-item"></span>
+                    <span class="header-burger-item"></span>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- ----------------Hero Section---------------- -->
+
     <section class="intro">
         <div class="container">
             <div class="intro-inner">
@@ -115,6 +136,9 @@
             </div>
         </div>
     </section>
+
+    <!-- ----------------About ME Section---------------- -->
+
     <section class="about-me" id="About">
         <div class="container">
             <div class="about-me-inner">
@@ -136,6 +160,9 @@
             </div>
         </div>
     </section>
+
+    <!-- ----------------Skills Section---------------- -->
+
     <section class="my-skills" id="Skills">
         <div class="container">
             <div class="my-skills-inner">
@@ -152,6 +179,9 @@
             </div>
         </div>
     </section>
+
+    <!-- ----------------Portfolio Section---------------- -->
+
     <section class="portfolio" id="Portfolio">
         <div class="container">
             <div class="portfolio-inner">
@@ -178,51 +208,47 @@
         </div>
     </section>
 
-    
-        <!-- ----------------Contact Section---------------- -->
+    <!-- ----------------Contact Section---------------- -->
 
+    <section class="contact" id="Contact">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="text-area">
+                    <p class="prt-tags">Contact</p>
+                    <p class="contact-about">I'm interested in freelance opportunities - especially
+                        ambitious or large projects. However, if you have other request or
+                        question, don't hesitate to use the form.
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="con-line">
+                            <div class="name ">
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Your Name" id="name">
+                            </div>
+                            <div class="subject">
+                                <label for="subject">Subject</label>
+                                <input type="text" placeholder="Subject" id="subject">
+                            </div>
+                        </div>
 
-        <section class="contact" id="Contact">
-            <div class="container">
-                <div class="contact-inner">
-                    <div class="text-area">
-                        <p class="prt-tags">Contact</p>
-                        <p class="contact-about">I'm interested in freelance opportunities -  especially
-                            ambitious or large projects. However, if you have other request or
-                            question, don't hesitate to use the form.
-                        </p>
-                    </div>
-                    <div class="form">
-                        <form action="">
-                            <div class="con-line">
-                                <div class="name ">
-                                    <label for="name">Name</label>
-                                    <input type="text" placeholder="Your Name" id="name">
-                                </div>
-                                <div class="subject">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" placeholder="Subject" id="subject">
-                                </div>
-                            </div>
-    
-                            <div class="mail">
-                                <label for="email">Mail</label>
-                                <input type="email" placeholder="Enter Your Mail" id="email">
-                            </div>
-                            <div class="contact-form ">
-                                <label for="textarea">Message</label>
-                                <textarea name="textarea" id="textarea" cols="60" rows="2"></textarea>
-                            </div>
-                            <div class="submit">
-                                <button class="CV" type="submit" value="ok">Send</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="mail">
+                            <label for="email">Mail</label>
+                            <input type="email" placeholder="Enter Your Mail" id="email">
+                        </div>
+                        <div class="contact-form ">
+                            <label for="textarea">Message</label>
+                            <textarea name="textarea" id="textarea" cols="60" rows="2"></textarea>
+                        </div>
+                        <div class="submit">
+                            <button class="CV" type="submit" value="ok">Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
-    
-
+        </div>
+    </section>
 
     <!-- ----------------Footer Section---------------- -->
 
@@ -230,11 +256,12 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-logo">
-                    <img src="img/NOSTRA.svg" alt="NOSTRA" >
+                    <img src="img/NOSTRA.svg" alt="NOSTRA">
                     <p>Creative designer & front-end developer</p>
+                    <p>TEL: +995571888888</p>
                 </div>
                 <div class="flex-items">
-                    <h3>Usefull Links</h3>
+                    <h4>Usefull Links</h4>
                     <ul class="footer-list">
                         <li class="footer-list-item">
                             <a class="footer-list-link" href="#Home">Home</a>
@@ -254,28 +281,40 @@
                     </ul>
                 </div>
                 <div class="grid-items">
-                    <h3 >Social Media</h3>
+                    <h4>Social Media</h4>
                     <ul class="footer-list">
                         <li class="footer-list-item">
                             <a class="footer-list-link" href="https://github.com/levanikhozrevanidze">Github</a>
                         </li>
                         <li class="footer-list-item">
-                            <a class="footer-list-link" href="https://www.facebook.com/WarningThisPersonIsaTrash/">Facebook</a>
+                            <a class="footer-list-link"
+                                href="https://www.facebook.com/WarningThisPersonIsaTrash/">Facebook</a>
                         </li>
                         <li class="footer-list-item">
-                            <a class="footer-list-link" href="https://www.instagram.com/levanikhozrevanidze/">Instagram</a>
+                            <a class="footer-list-link"
+                                href="https://www.instagram.com/levanikhozrevanidze/">Instagram</a>
                         </li>
                         <li class="footer-list-item">
-                            <a class="footer-list-link" href="https://www.linkedin.com/in/levani-khozrevanidze-b9b6a7233/">Linkd In</a>
+                            <a class="footer-list-link"
+                                href="https://www.linkedin.com/in/levani-khozrevanidze-b9b6a7233/">Linkd In</a>
                         </li>
                         <li class="footer-list-item">
                             <a class="footer-list-link" href="https://twitter.com/levani82667013">Twitter</a>
                         </li>
                     </ul>
                 </div>
+                <div class="grid-items">
+                    <h4>Map </h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47570.34057080192!2d46.23557501694033!3d41.82514804258668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40466b9dc92a411b%3A0xf93cf5e29ff8281e!2sLagodekhi!5e0!3m2!1sen!2sge!4v1651265026037!5m2!1sen!2sge"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </footer>
+
+
     <script src="js/main.js"></script>
 </body>
 

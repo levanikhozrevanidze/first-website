@@ -23,6 +23,10 @@ body {
 
 /* ---------Scrollbar--------- */
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
 *::-webkit-scrollbar {
     width: 16px;
 }
@@ -46,23 +50,23 @@ body {
 /* ---------Header--------- */
 
 .container {
-    width: 90%;
-    max-width: 1530px;
-    padding: 0 10px;
-    margin: 0 auto;
+    width: 992px;
+    margin: auto;
 }
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 20px 0;
     box-shadow: var(--header-dark-shadow)
 }
 
 .header-inner {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .menu-list {
@@ -90,26 +94,25 @@ body {
 
 }
 
-.fa-github {
+/* .fa-github {
     color: var(--text-color);
-}
+} */
 
 .fa-sun {
     color: var(--text-color);
 }
 
-.Github-link {
+/* .Github-link {
     margin-left: 20px;
-}
+} */
 
 .theme img {
+    margin-left: 115px;
     width: 24px;
     color: white;
-
 }
 
 #icon {
-
     animation: rotation 10s infinite linear;
 }
 
@@ -121,7 +124,59 @@ body {
     to {
         transform: rotate(359deg);
     }
+
 }
+
+/* ---------Header Burger--------- */
+
+.header-burger {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.header-burger-item {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--text-color);
+    display: block;
+    transition: all .5s;
+}
+
+.header-burger-item:nth-child(1) {
+    transform-origin: left top;
+    top: 0;
+}
+
+.header-burger-item:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-burger-item:nth-child(3) {
+    bottom: 0;
+    transform-origin: left bottom;
+}
+
+.header-burger.active .header-burger-item:nth-child(1) {
+    transform: rotate(45deg) translate3d(2px, 2px, 0);
+}
+
+.header-burger.active .header-burger-item:nth-child(2) {
+    opacity: 0;
+}
+
+.header-burger.active .header-burger-item:nth-child(3) {
+    transform: rotate(-45deg) translate3d(2px, -2px, 0);
+}
+
+
+/* ------------------ */
 
 .white-theme {
     --brand-color: #FFB742;
@@ -177,7 +232,6 @@ body {
 span {
     background-color: transparent;
     color: var(--brand-color);
-    text-decoration: none;
 }
 
 .resume {
@@ -200,6 +254,9 @@ span {
 .CV:hover {
     transform: scale(1.1);
 }
+
+/* ------------------ */
+
 
 /* ---------Cards-------- */
 
@@ -257,6 +314,9 @@ img.arrow {
     font-size: 14px;
     color: var(--text-color);
 }
+
+/* ------------------ */
+
 
 /* ---------About ME Section--------- */
 
@@ -320,11 +380,18 @@ img.arrow {
 
 .my-skills-inner .text-area {
     width: 45%;
+    margin-left: 0;
 }
 
 .my-skills-inner img {
     width: 40%;
 }
+
+.flex-text img {
+    width: 100%;
+}
+
+/* ------------------ */
 
 
 /* ---------Portfolio Section--------- */
@@ -383,19 +450,23 @@ img.arrow {
     background-color: var(--brand-color);
 }
 
+/* ------------------ */
+
+
 /* ---------Contact Section--------- */
+
+
 .contact {
     margin-top: 50px;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
-
 }
 
 .contact-about {
     font-size: 16px;
-    width: 500px;
-
+    width: 450px;
+    margin-right: 40px;
 }
 
 .contact-inner {
@@ -404,6 +475,10 @@ img.arrow {
     width: 100%;
     padding-top: 100px;
     justify-content: space-between;
+}
+
+.contact-inner .text-area {
+    margin-left: 0;
 }
 
 .con-line {
@@ -437,6 +512,8 @@ img.arrow {
     border: 1px solid var(--input-border);
     background-color: var(--card-bg);
     box-shadow: var(--card-dark-shadow);
+    color: var(--text-color);
+    padding: 10px;
 }
 
 .contact-inner label {
@@ -457,12 +534,12 @@ img.arrow {
 
 .submit .CV {
     margin-top: 20px;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 
 
 ::placeholder {
-    font-size: 12px;
+    font-size: 15px;
     color: var(--text-color);
 }
 
@@ -487,17 +564,15 @@ img.arrow {
 
 .footer p {
     margin-top: 20px;
-    
     width: 240px;
     color: var(--footer-text);
 }
 
 .footer-list {
     list-style: none;
-
 }
 
-.footer h3 {
+.footer h4 {
     color: var(--footer-text);
 }
 
@@ -507,7 +582,11 @@ img.arrow {
 
 .footer-list-link {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     color: var(--footer-text);
+}
+
+.grid-items iframe {
+    margin-top: 20px;
 }

@@ -1,0 +1,640 @@
+@media screen and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-burger {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        background: var(--bg);
+        transition: all .5s;
+
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .tools {
+        display: block;
+        flex-direction: column;
+    }
+
+    .theme {
+        margin-left: 20px;
+    }
+
+    .theme img {
+        margin-left: 0;
+    }
+
+    .lang {
+        padding: 20px 0;
+    }
+
+    .menu-list {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .menu-list-item {
+        margin: 15px 0;
+    }
+
+    .CV {
+
+        font-size: 16px;
+    }
+
+
+
+    .card {
+
+        width: 250px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .cards p {
+
+        font-size: 12px;
+
+    }
+
+    .cards img {
+        width: 50px;
+
+    }
+
+    img.arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* ---------Contact Section--------- */
+
+    .contact-about {
+        font-size: 15px;
+        width: auto;
+        margin-right: 40px;
+    }
+
+
+    /* ----------------Footer Section---------------- */
+
+    .footer-inner {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        row-gap: 70px;
+
+    }
+
+    /* .footer-logo {
+        order: 3;
+    } */
+
+    .footer p {
+        font-size: 15px;
+
+    }
+
+    .grid-items iframe {
+        width: 200px;
+        height: 140px;
+        /* display: none; */
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+    /* ---------Header Section--------- */
+
+
+    .menu-list-item {
+        margin: 10px 0;
+    }
+
+    .menu-list-link {
+        font-size: 16px;
+    }
+
+    .theme img {
+        width: 20px;
+    }
+
+    .lang p {
+        color: var(--text-color);
+        font-size: 14px;
+    }
+
+
+    /* ---------Hero Section--------- */
+
+
+    .h2-title {
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+
+    .h1-title {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .p-title {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    /* ---------Cards-------- */
+
+    .card {
+        height: 70px;
+        width: 180px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .cards p {
+
+        font-size: 10px;
+
+    }
+
+    .cards img {
+        width: 30px;
+
+    }
+
+    img.arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    /* ---------About ME Section--------- */
+
+    .text-area {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 30px;
+        color: var(--text-color);
+    }
+
+    .tags {
+
+        font-size: 16px;
+    }
+
+    .h2-tags {
+        font-size: 20px;
+    }
+
+    .p-about {
+        font-size: 14px;
+    }
+
+    .CV {
+
+        font-size: 14px;
+    }
+
+    /* ---------Skills Section--------- */
+
+    /* ---------Portfolio Section--------- */
+
+    .prt-tags {
+        font-size: 16px;
+    }
+
+    .flex-tab {
+        display: flex;
+        margin: 20px 0 40px 0;
+
+    }
+
+    .flex-tab-item {
+        margin: 0 10px;
+    }
+
+    .flex-tab-link {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    /* ---------Contact Section--------- */
+
+    .contact-about {
+        font-size: 14px;
+        width: auto;
+        margin-right: 40px;
+    }
+
+    .contact-inner input {
+        margin: 10px 0;
+        height: 10px;
+        width: 100%;
+        padding: 15px;
+        background-color: var(--card-bg);
+        border: 1px solid var(--input-border);
+        font-size: 12px;
+        font-weight: 500;
+        box-shadow: var(--card-dark-shadow);
+        border-radius: 5px;
+    }
+
+    .form {
+        width: 290px;
+    }
+
+    .contact-inner label {
+        padding: 5px 0;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .contact-inner label {
+        padding: 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .contact-inner textarea {
+        max-width: 230px;
+        min-height: 80px;
+    }
+
+    .contact-form label {
+        padding: 0 0 10px 0;
+    }
+
+    .submit .CV {
+        margin-top: 20px;
+        padding: 5px 10px;
+
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+
+    /* ----------------Footer Section---------------- */
+
+    .footer p {
+        font-size: 14px;
+
+    }
+
+    .footer-list-item {
+        padding-top: 15px;
+    }
+
+    .footer-list-link {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .footer h4 {
+        font-size: 15px;
+    }
+
+
+    .footer-inner {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 70px;
+
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 615px) {
+
+
+    /* ---------Cards-------- */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .third {
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    .card {
+        height: 70px;
+        width: 250px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .cards p {
+        font-size: 10px;
+    }
+
+    .cards img {
+        width: 30px;
+
+    }
+
+    img.arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    /* ---------About ME Section--------- */
+
+    .about-me-inner {
+        display: grid;
+        place-items: center;
+    }
+
+    .about-me-inner img {
+        width: 80%;
+
+    }
+
+    .text-area {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 100px 0 0 0;
+        width: fit-content;
+    }
+
+    .p-about {
+        font-size: 14px;
+
+    }
+
+    .CV {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+
+    /* ---------Skills Section--------- */
+
+
+    .my-skills-inner {
+        display: grid;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .my-skills-inner .text-area {
+        width: 100%;
+    }
+
+    .my-skills-inner img {
+        width: 100%;
+        height: 90%;
+    }
+
+    /* ---------Portfolio Section--------- */
+    .portfolio-inner {
+        margin-top: 100px;
+        padding-top: 20px;
+    }
+
+    .flex-tab-link {
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+
+
+    /* ---------Contact Section--------- */
+
+    .contact-inner {
+        display: grid;
+        padding-top: 0;
+        place-items: center;
+    }
+
+    .contact-inner .text-area {
+        margin: 0;
+
+    }
+
+    .contact-about {
+        font-size: 14px;
+        width: 100%;
+        margin-right: 40px;
+    }
+
+
+    .form {
+        width: 350px;
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    .contact-inner textarea {
+        max-width: 230px;
+        min-height: 80px;
+        max-height: 135px;
+    }
+
+    /* ---------Portfolio Section--------- */
+
+    .flex-tab-link {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+
+
+    /* ---------Cards-------- */
+
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .third {
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    .card {
+        height: 70px;
+        width: 250px;
+    }
+
+    /* ---------Portfolio Section--------- */
+
+    .flex-tab-link {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 566px) {
+    .card {
+        height: 70px;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+
+    /* ---------Cards-------- */
+
+    .card {
+        height: 70px;
+        width: 220px;
+    }
+
+    /* ---------Portfolio Section--------- */
+
+    .flex-tab-link {
+        font-size: 12px;
+    }
+
+    /* ---------footer Section--------- */
+
+    .footer p {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 502px) {
+
+    /* ---------Cards-------- */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: unset;
+
+    }
+
+    .second {
+        margin-top: 50px;
+
+    }
+
+    .card {
+        height: 70px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    /* ---------footer Section--------- */
+
+    .footer-inner {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 70px;
+
+    }
+
+    .footer iframe {
+        width: 120px;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+
+
+    .flex-tab {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 10px;
+    }
+
+
+
+
+
+
+    /* ---------Contact Section--------- */
+
+    .con-line {
+        flex-direction: column;
+
+    }
+
+    .con-line input {
+        width: 230px;
+    }
+
+    .form {
+        height: 540px;
+        width: auto;
+    }
+
+    .contact-inner label {
+        padding: 10px 0;
+
+    }
+
+    .contact-form label {
+        padding: 10px 0 15px 0;
+    }
+
+    .contact-inner textarea {
+        max-width: 230px;
+        min-height: 115px;
+        max-height: 135px;
+    }
+
+
+}
