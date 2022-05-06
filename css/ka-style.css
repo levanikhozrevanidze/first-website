@@ -55,10 +55,12 @@ body {
 
 .header {
     position: absolute;
+ /*    position: sticky; */
     top: 0;
     left: 0;
     right: 0;
     padding: 20px 0;
+    background: var(--bg);
     box-shadow: var(--header-dark-shadow)
 }
 
@@ -71,6 +73,7 @@ body {
 .menu-list {
     list-style: none;
     display: flex;
+    
 }
 
 .menu-list-item {
@@ -105,6 +108,7 @@ body {
 } */
 
 .theme img {
+    margin-left: 30px;
     width: 24px;
     color: white;
 }
