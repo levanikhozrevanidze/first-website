@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <header class="header" id="Home">
+    <header class="header" >
         <div class="container">
             <div class="header-inner">
                 <div class="logo">
@@ -39,19 +39,19 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-list-item">
-                            <a class="menu-list-link" href="#Home">მთავარი</a>
+                            <a class="menu-list-link" onclick="remove()" href="#Home">მთავარი</a>
                         </li>
                         <li class="menu-list-item">
-                            <a class="menu-list-link" href="#About">შესახებ</a>
+                            <a class="menu-list-link" onclick="remove()" href="#About">შესახებ</a>
                         </li>
                         <li class="menu-list-item">
-                            <a class="menu-list-link" href="#Skills">უნარები</a>
+                            <a class="menu-list-link" onclick="remove()" href="#Skills">უნარები</a>
                         </li>
                         <li class="menu-list-item">
-                            <a class="menu-list-link" href="#Portfolio">ნამუშევრები</a>
+                            <a class="menu-list-link" onclick="remove()" href="#Portfolio">ნამუშევრები</a>
                         </li>
                         <li class="menu-list-item">
-                            <a class="menu-list-link" href="#Contact">კონტაქტი</a>
+                            <a class="menu-list-link" onclick="remove()" href="#Contact">კონტაქტი</a>
                         </li>
                         <li class="menu-list-item">
                             <div class="tools">
@@ -86,7 +86,7 @@
 
     <!-- ----------------Hero Section---------------- -->
 
-    <section class="intro">
+    <section class="intro" id="Home">
         <div class="container">
             <div class="intro-inner">
                 <div class="intro-content">

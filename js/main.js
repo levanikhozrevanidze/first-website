@@ -60,7 +60,17 @@ let headerBurger = document.querySelector(".header-burger");
 let menu = document.querySelector(".menu");
 let body = document.querySelector("body");
 headerBurger.onclick = function () {
-  headerBurger.classList.toggle("active");
-  menu.classList.toggle("active");
-  body.classList.toggle("no-scroll");
+  headerBurger.classList.add("active");
+  menu.classList.add("active");
+  body.classList.add("no-scroll");
+}
+
+
+function remove() {
+  const headerBurger = document.querySelector(".header-burger");
+  const menu = document.querySelector(".menu");
+  const body = document.querySelector("body");
+  headerBurger.classList.remove("active");
+  menu.classList.remove("active");
+  body.classList.remove("no-scroll");
 }

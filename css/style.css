@@ -55,11 +55,14 @@ body {
 }
 
 .header {
-    position: absolute;
+    position: sticky;
+    /*    position: absolute;
+       */
     top: 0;
     left: 0;
     right: 0;
     padding: 20px 0;
+    background: var(--bg);
     box-shadow: var(--header-dark-shadow)
 }
 
