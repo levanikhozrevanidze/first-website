@@ -250,10 +250,16 @@
         margin: 0 10px;
     }
 
-    .flex-tab-link {
+    .tab {
         font-size: 14px;
         padding: 10px 10px;
     }
+
+    .product .source {
+        width: 300px;
+        height: 250px;
+    }
+
 
     /* ---------Contact Section--------- */
 
@@ -345,7 +351,13 @@
 
 }
 
+@media screen and (max-width: 711px) {
 
+    .product .source {
+        width: 200px;
+        height: 200px;
+    }
+}
 
 @media screen and (max-width: 615px) {
 
@@ -448,7 +460,13 @@
         padding-top: 20px;
     }
 
-    .flex-tab-link {
+    .product .source {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .tab {
         font-size: 14px;
         padding: 5px 5px;
     }
@@ -488,7 +506,7 @@
 
     /* ---------Portfolio Section--------- */
 
-    .flex-tab-link {
+    .tab {
         font-size: 13px;
     }
 }
@@ -517,7 +535,7 @@
 
     /* ---------Portfolio Section--------- */
 
-    .flex-tab-link {
+    .tab {
         font-size: 13px;
     }
 }
@@ -540,8 +558,13 @@
 
     /* ---------Portfolio Section--------- */
 
-    .flex-tab-link {
+    .tab {
         font-size: 12px;
+    }
+
+    .product .source {
+        width: 200px;
+        height: 200px;
     }
 
     /* ---------footer Section--------- */
@@ -589,6 +612,7 @@
         width: 120px;
     }
 }
+
 
 
 @media screen and (max-width: 390px) {

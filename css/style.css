@@ -63,13 +63,15 @@ body {
     right: 0;
     padding: 20px 0;
     background: var(--bg);
-    box-shadow: var(--header-dark-shadow)
+    box-shadow: var(--header-dark-shadow);
+    z-index: 1;
 }
 
 .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .menu-list {
@@ -405,6 +407,41 @@ img.arrow {
     text-align: center;
     margin-top: 100px;
     padding-top: 150px;
+
+}
+
+.portfolio-inner ul li.active {
+    background-color: var(--brand-color);
+    color: var(--btn-text);
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product .source {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    
+}
+.product .source.hide{
+    display: none;
+}
+
+.product .source img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .flex-text {
@@ -413,7 +450,6 @@ img.arrow {
     color: var(--text-color);
     justify-content: center;
     align-items: center;
-
 }
 
 .prt-tags {
@@ -432,25 +468,22 @@ img.arrow {
     list-style: none;
     display: flex;
     margin: 35px 0 55px 0;
-
 }
 
-.flex-tab-item {
-    margin: 0 20px;
-}
 
-.flex-tab-link {
+
+.tab {
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     color: var(--text-color);
     padding: 10px 20px;
+    cursor: pointer;
 }
 
-.flex-tab-link:hover {
-    color: var(--btn-text);
+.tab:hover {
+    color: var(--brand-color);
     width: fit-content;
-    background-color: var(--brand-color);
 }
 
 /* ------------------ */
@@ -500,6 +533,7 @@ img.arrow {
     width: 100%;
     padding: 20px;
     background-color: var(--card-bg);
+    color: var(--text-color);
     border: 1px solid var(--input-border);
     font-size: 16px;
     font-weight: 500;
@@ -537,7 +571,8 @@ img.arrow {
 
 .submit .CV {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px 50px;
+
 }
 
 
@@ -589,6 +624,11 @@ img.arrow {
     text-decoration: none;
     color: var(--footer-text);
 }
+
+.footer-list-link:hover {
+    color: var(--brand-color);
+}
+
 
 .grid-items iframe {
     margin-top: 20px;

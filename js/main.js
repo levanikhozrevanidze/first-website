@@ -53,18 +53,17 @@ WhiteThemeToggle.addEventListener("click", () => {
 });
 
 
-
 /* header burger */
 
-let headerBurger = document.querySelector(".header-burger");
-let menu = document.querySelector(".menu");
-let body = document.querySelector("body");
-headerBurger.onclick = function () {
-  headerBurger.classList.add("active");
-  menu.classList.add("active");
-  body.classList.add("no-scroll");
-}
 
+let headerBurger = document.querySelector('.header-burger')
+let menu = document.querySelector('.menu');
+let body = document.querySelector('body');
+headerBurger.onclick = function() {
+   headerBurger.classList.toggle('active');
+   menu.classList.toggle('active');
+   body.classList.toggle('no-scroll');
+}
 
 function remove() {
   const headerBurger = document.querySelector(".header-burger");
@@ -73,4 +72,48 @@ function remove() {
   headerBurger.classList.remove("active");
   menu.classList.remove("active");
   body.classList.remove("no-scroll");
+}
+
+//contact
+
+function SendMail() {
+  var params = {
+    from_name: document.getElementById("name").value,
+    subject: document.getElementById("subject").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value
+  };
+  emailjs.send("service_luhs8yw", "template_5zyhuuc", params);
+  /* .then(function (res) {
+      alert("Success!" + res.status);
+    }); */
+}
+
+
+
+//portfolio section 
+
+let tab = document.querySelectorAll(".tab");
+let source = document.querySelectorAll(".source");
+
+for (let i = 0; i < tab.length; i++) {
+  tab[i].addEventListener("click", function () {
+    for (let j = 0; j < tab.length; j++) {
+      tab[j].classList.remove("active");
+    }
+    this.classList.add("active");
+
+    let dataFilter = this.getAttribute("data-filter");
+
+    for (let k = 0; k < source.length; k++) {
+      source[k].classList.remove("active");
+      source[k].classList.add("hide");
+
+      if (source[k].getAttribute("data-item") == dataFilter ||
+        dataFilter == "All") {
+        source[k].classList.remove("hide");
+        source[k].classList.add("active");
+      }
+    }
+  })
 }

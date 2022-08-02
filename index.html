@@ -22,300 +22,323 @@
 
     <link rel="stylesheet" href="css/responsive.css">
 
+      <!-- ----------------js script---------------- -->
+
+      <script src="js/main.js" defer></script>
+
+    <!-------------EmailJS------------->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("y1KBgOBoUiKN30Z6-");
+        })();
+    </script>
+
     <!-------------Document Name------------->
 
     <title>Nostra - Portfolio</title>
 </head>
 
-<body>
-    <header class="header" >
-        <div class="container">
-            <div class="header-inner">
-                <div class="logo">
-                    <a href="#Home">
-                        <img src="img/NOSTRA.svg" alt="NOSTRA" id="logo">
-                    </a>
-                </div>
-                <nav class="menu">
-                    <ul class="menu-list">
-                        <li class="menu-list-item" >
-                            <a class="menu-list-link" onclick="remove()" href="#Home">Home</a>
-                        </li>
-                        <li class="menu-list-item" >
-                            <a class="menu-list-link" onclick="remove()" href="#About">About</a>
-                        </li>
-                        <li class="menu-list-item" >
-                            <a class="menu-list-link" onclick="remove()" href="#Skills">Skills</a>
-                        </li>
-                        <li class="menu-list-item" >
-                            <a class="menu-list-link" onclick="remove()" href="#Portfolio">Works</a>
-                        </li>
-                        <li class="menu-list-item" >
-                            <a class="menu-list-link" onclick="remove()" href="#Contact">Contact</a>
-                        </li>
-                        <li class="menu-list-item" >
-                            <div class="tools">
-                                <div class="theme">
-                                    <img  src="img/sun.svg" alt="theme" id="icon">
-                                </div>
-                                <!--  <div class="Github-link">
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="#Home">
+                    <img src="img/NOSTRA.svg" alt="NOSTRA" id="logo">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-item">
+                        <a class="menu-list-link" onclick="remove()" href="#Home">Home</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="menu-list-link" onclick="remove()" href="#About">About</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="menu-list-link" onclick="remove()" href="#Skills">Skills</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="menu-list-link" onclick="remove()" href="#Portfolio">Works</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="menu-list-link" onclick="remove()" href="#Contact">Contact</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <div class="tools">
+                            <div class="theme">
+                                <img src="img/sun.svg" alt="theme" id="icon">
+                            </div>
+                            <!--  <div class="Github-link">
                                     <a href="https://github.com/levanikhozrevanidze" target="_blank">
                                         <i class="fa-brands fa-github fa-xl"></i>
                                     </a>
                                 </div> -->
-                                <div class="lang">
-                                    <a class="ka" href="ka.html">
-                                        <p>KA</p>
-                                    </a>
-                                    <a href="index.html">
-                                        <p>EN</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-burger">
-                    <span class="header-burger-item"></span>
-                    <span class="header-burger-item"></span>
-                    <span class="header-burger-item"></span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- ----------------Hero Section---------------- -->
-
-    <section class="intro" id="Home">
-        <div class="container">
-            <div class="intro-inner">
-                <div class="intro-content">
-                    <div class="intro-content-title">
-                        <h2 class="h2-title">Hi, I am <span>Levani Khozrevanidze</span>👋</h2>
-                        <h1 class="h1-title">Creative designer & front-end developer</h1>
-                        <p class="p-title">I design and code beautifully simple things, and I love what I do.</p>
-                    </div>
-                </div>
-                <div class="resume">
-                    <a href="#Contact">
-                        <button class="CV">Hire Me</button>
-                    </a>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="first card ">
-                    <div class="card-inner">
-                        <img src="img/experience.svg" alt="experience">
-                        <div class="card-title-section">
-                            <h2 class="card-title">5+</h2>
-                            <p>Years Of experience</p>
-                        </div>
-                        <img class="arrow" src="img/arrow.svg" alt="arrow">
-                    </div>
-                </div>
-                <div class="second card">
-                    <div class="card-inner">
-                        <img src="img/work.svg" alt="done">
-                        <div class="card-title-section">
-                            <h2 class="card-title">100+</h2>
-                            <p>Completed Projects</p>
-                        </div>
-                        <img class="arrow" src="img/arrow.svg" alt="arrow">
-                    </div>
-                </div>
-                <div class="third card">
-                    <div class="card-inner">
-                        <img src="img/clients.svg" alt="clients">
-                        <div class="card-title-section">
-                            <h2 class="card-title">50+</h2>
-                            <p>Happy clients</p>
-                        </div>
-                        <img class="arrow" src="img/arrow.svg" alt="arrow">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------About ME Section---------------- -->
-
-    <section class="about-me" id="About">
-        <div class="container">
-            <div class="about-me-inner">
-                <img src="img/empty.svg" alt="notme">
-                <div class="text-area">
-                    <p class="tags">WHO I AM</p>
-                    <h2 class="h2-tags">About Me</h2>
-                    <p class="p-about">Hi! I’m Levani khozrevanidze, and I’m a designer & front-end developer
-                        who has passion for building clean web sites with intuitive functionality.
-                        I enjoy the process of turning ideas into reality using creative solutions.
-                        I’m always curious about learning new skills, tools, and concepts.
-                        In addition to working on various solo full stack projects,
-                        I have worked with creative teams, which involves daily
-                        stand-ups and communications, source control, and project management.</p>
-                    <a href="#">
-                        <button class="CV">Download CV</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------Skills Section---------------- -->
-
-    <section class="my-skills" id="Skills">
-        <div class="container">
-            <div class="my-skills-inner">
-                <div class="text-area">
-                    <p class="tags">My Skills</p>
-                    <h2 class="h2-tags">What My Programming
-                        Skills Included?
-                    </h2>
-                    <p class="p-about">I develop simple, intuitive and
-                        responsive user interface that helps users get things
-                        done with less effort and time with those technologies.</p>
-                </div>
-                <img class="skills" src="img/skills.svg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------Portfolio Section---------------- -->
-
-    <section class="portfolio" id="Portfolio">
-        <div class="container">
-            <div class="portfolio-inner">
-                <div class="flex-text">
-                    <p class="prt-tags">My Works</p>
-                    <h2 class="h2-tags">Featured Works</h2>
-                    <ul class="flex-tab">
-                        <li class="flex-tab-item">
-                            <a class="flex-tab-link" href="#">All</a>
-                        </li>
-                        <li class="flex-tab-item">
-                            <a class="flex-tab-link" href="#">Mobile App</a>
-                        </li>
-                        <li class="flex-tab-item">
-                            <a class="flex-tab-link" href="#">Website Design</a>
-                        </li>
-                        <li class="flex-tab-item">
-                            <a class="flex-tab-link" href="#">Website Development</a>
-                        </li>
-                    </ul>
-                    <img class="works" src="img/work-done.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------Contact Section---------------- -->
-
-    <section class="contact" id="Contact">
-        <div class="container">
-            <div class="contact-inner">
-                <div class="text-area">
-                    <p class="prt-tags">Contact</p>
-                    <p class="contact-about">I'm interested in freelance opportunities - especially
-                        ambitious or large projects. However, if you have other request or
-                        question, don't hesitate to use the form.
-                    </p>
-                </div>
-                <div class="form">
-                    <form action="">
-                        <div class="con-line">
-                            <div class="name ">
-                                <label for="name">Name</label>
-                                <input type="text" placeholder="Your Name" id="name">
-                            </div>
-                            <div class="subject">
-                                <label for="subject">Subject</label>
-                                <input type="text" placeholder="Subject" id="subject">
+                            <div class="lang">
+                                <a class="ka" href="ka.html">
+                                    <p>KA</p>
+                                </a>
+                                <a href="index.html">
+                                    <p>EN</p>
+                                </a>
                             </div>
                         </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-burger">
+                <span class="header-burger-item"></span>
+                <span class="header-burger-item"></span>
+                <span class="header-burger-item"></span>
+            </div>
+        </div>
+    </div>
+</header>
 
-                        <div class="mail">
-                            <label for="email">Mail</label>
-                            <input type="email" placeholder="Enter Your Mail" id="email">
-                        </div>
-                        <div class="contact-form ">
-                            <label for="textarea">Message</label>
-                            <textarea name="textarea" id="textarea" cols="60" rows="2"></textarea>
-                        </div>
-                        <div class="submit">
-                            <button class="CV" type="submit" value="ok">Send</button>
-                        </div>
-                    </form>
+<!-- ----------------Hero Section---------------- -->
+
+<section class="intro" id="Home">
+    <div class="container">
+        <div class="intro-inner">
+            <div class="intro-content">
+                <div class="intro-content-title">
+                    <h2 class="h2-title">Hi, I am <span>Levani Khozrevanidze</span>👋</h2>
+                    <h1 class="h1-title">Creative designer & front-end developer</h1>
+                    <p class="p-title">I design and code beautifully simple things, and I love what I do.</p>
+                </div>
+            </div>
+            <div class="resume">
+                <a href="#Contact">
+                    <button class="CV">Hire Me</button>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="first card ">
+                <div class="card-inner">
+                    <img src="img/experience.svg" alt="experience">
+                    <div class="card-title-section">
+                        <h2 class="card-title">5+</h2>
+                        <p>Years Of experience</p>
+                    </div>
+                    <img class="arrow" src="img/arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="second card">
+                <div class="card-inner">
+                    <img src="img/work.svg" alt="done">
+                    <div class="card-title-section">
+                        <h2 class="card-title">100+</h2>
+                        <p>Completed Projects</p>
+                    </div>
+                    <img class="arrow" src="img/arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="third card">
+                <div class="card-inner">
+                    <img src="img/clients.svg" alt="clients">
+                    <div class="card-title-section">
+                        <h2 class="card-title">50+</h2>
+                        <p>Happy clients</p>
+                    </div>
+                    <img class="arrow" src="img/arrow.svg" alt="arrow">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ----------------Footer Section---------------- -->
+<!-- ----------------About ME Section---------------- -->
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-inner">
-                <div class="footer-logo">
-                    <img src="img/NOSTRA.svg" alt="NOSTRA">
-                    <p>Creative designer & front-end developer</p>
-                    <p>TEL: +995571888888</p>
-                </div>
-                <div class="flex-items">
-                    <h4>Usefull Links</h4>
-                    <ul class="footer-list">
-                        <li class="footer-list-item">
-                            <a class="footer-list-link" href="#Home">Home</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="footer-list-link" href="#About">About</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="footer-list-link" href="#Skills">Skills</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="footer-list-link" href="#Portfolio">Portfolio</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="footer-list-link" href="#Contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-items">
-                    <h4>Social Media</h4>
-                    <ul class="footer-list">
-                        <li class="footer-list-item">
-                            <a class="footer-list-link" href="https://github.com/levanikhozrevanidze">Github</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="footer-list-link"
-                                href="https://www.facebook.com/WarningThisPersonIsaTrash/">Facebook</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="footer-list-link"
-                                href="https://www.instagram.com/levanikhozrevanidze/">Instagram</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="footer-list-link"
-                                href="https://www.linkedin.com/in/levani-khozrevanidze-b9b6a7233/">Linked In</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a class="footer-list-link" href="https://twitter.com/levani82667013">Twitter</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-items">
-                    <h4>Map </h4>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47570.34057080192!2d46.23557501694033!3d41.82514804258668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40466b9dc92a411b%3A0xf93cf5e29ff8281e!2sLagodekhi!5e0!3m2!1sen!2sge!4v1651265026037!5m2!1sen!2sge"
-                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section class="about-me" id="About">
+    <div class="container">
+        <div class="about-me-inner">
+            <img src="img/empty.svg" alt="notme">
+            <div class="text-area">
+                <p class="tags">WHO I AM</p>
+                <h2 class="h2-tags">About Me</h2>
+                <p class="p-about">Hi! I’m Levani khozrevanidze, and I’m a designer & front-end developer
+                    who has passion for building clean web sites with intuitive functionality.
+                    I enjoy the process of turning ideas into reality using creative solutions.
+                    I’m always curious about learning new skills, tools, and concepts.
+                    In addition to working on various solo full stack projects,
+                    I have worked with creative teams, which involves daily
+                    stand-ups and communications, source control, and project management.</p>
+                <a href="#">
+                    <button class="CV">Download CV</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----------------Skills Section---------------- -->
+
+<section class="my-skills" id="Skills">
+    <div class="container">
+        <div class="my-skills-inner">
+            <div class="text-area">
+                <p class="tags">My Skills</p>
+                <h2 class="h2-tags">What My Programming
+                    Skills Included?
+                </h2>
+                <p class="p-about">I develop simple, intuitive and
+                    responsive user interface that helps users get things
+                    done with less effort and time with those technologies.</p>
+            </div>
+            <img class="skills" src="img/skills.svg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- ----------------Portfolio Section---------------- -->
+
+<section class="portfolio" id="Portfolio">
+    <div class="container">
+        <div class="portfolio-inner">
+            <div class="flex-text">
+                <p class="prt-tags">My Works</p>
+                <h2 class="h2-tags">Featured Works</h2>
+                <ul class="flex-tab">
+                    <li class="tab active" data-filter="All">All</li>
+                    <li class="tab" data-filter="Mob-App">Mobile App</li>
+                    <li class="tab" data-filter="Web-Des">Website Design</li>
+                    <li class="tab" data-filter="Web-Dev">Website Development</li>
+                </ul>
+                <div class="product">
+                    <div class="source" data-item="Mob-App">
+                        <img src="img\portfolio\mobile_app_1.svg" alt="mobile_app">
+                    </div>
+                    <div class="source" data-item="Web-Des">
+                        <img src="img\portfolio\Website_Design_1.svg" alt="Website_Design_1">
+                    </div>
+                    <div class="source" data-item="Web-Des">
+                        <img src="img\portfolio\Website_Design_2.svg" alt="Website_Design_2">
+                    </div>
+                    <div class="source" data-item="Web-Des">
+                        <img src="img\portfolio\Website_Design_3.svg" alt="Website_Design_3">
+                    </div>
+                    <div class="source" data-item="Web-Des">
+                        <img src="img\portfolio\Website_Design_4.svg" alt="Website_Design_4">
+                    </div>
+                    <div class="source" data-item="Web-Dev">
+                        <img src="img\portfolio\Website_development_1.svg" alt="Website_development">
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
+<!-- ----------------Contact Section---------------- -->
 
-    <script src="js/main.js"></script>
+<section class="contact" id="Contact">
+    <div class="container">
+        <div class="contact-inner">
+            <div class="text-area">
+                <p class="prt-tags">Contact</p>
+                <p class="contact-about">I'm interested in freelance opportunities - especially
+                    ambitious or large projects. However, if you have other request or
+                    question, don't hesitate to use the form.
+                </p>
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="con-line">
+                        <div class="name ">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Your Name" id="name" required>
+                        </div>
+
+                        <div class="subject">
+                            <label for="subject">Subject</label>
+                            <input id="subject" type="text" placeholder="Subject">
+                        </div>
+                    </div>
+
+                    <div class="mail">
+                        <label for="email_id">Mail</label>
+                        <input id="email_id" type="email" placeholder="Enter Your Mail" required>
+                    </div>
+
+                    <div class="contact-form ">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="2"></textarea>
+                    </div>
+
+                    <div class="submit">
+                        <button class="CV" onclick="SendMail()">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----------------Footer Section---------------- -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="img/NOSTRA.svg" alt="NOSTRA">
+                <p>Creative designer & front-end developer</p>
+                <p>TEL: +995571888888</p>
+            </div>
+            <div class="flex-items">
+                <h4>Usefull Links</h4>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a class="footer-list-link" href="#Home">Home</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-list-link" href="#About">About</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-list-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-list-link" href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-list-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid-items">
+                <h4>Social Media</h4>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a class="footer-list-link" href="https://github.com/levanikhozrevanidze">Github</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-list-link"
+                            href="https://www.facebook.com/WarningThisPersonIsaTrash/">Facebook</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-list-link" href="https://www.instagram.com/levanikhozrevanidze/">Instagram</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-list-link"
+                            href="https://www.linkedin.com/in/levani-khozrevanidze-b9b6a7233/">Linked In</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-list-link" href="https://twitter.com/levani82667013">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid-items">
+                <h4>Map </h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47570.34057080192!2d46.23557501694033!3d41.82514804258668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40466b9dc92a411b%3A0xf93cf5e29ff8281e!2sLagodekhi!5e0!3m2!1sen!2sge!4v1651265026037!5m2!1sen!2sge"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>

@@ -22,13 +22,27 @@
 
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- ----------------js script---------------- -->
+
+    <script src="js/main.js" defer></script>
+
+    <!-------------EmailJS------------->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("y1KBgOBoUiKN30Z6-");
+        })();
+    </script>
+
     <!-------------Document Name------------->
 
     <title>ნოსტრა - პორტფოლიო</title>
 </head>
 
 <body>
-    <header class="header" >
+    <header class="header">
         <div class="container">
             <div class="header-inner">
                 <div class="logo">
@@ -189,20 +203,31 @@
                     <p class="prt-tags">ნამუშევრები</p>
                     <h2 class="h2-tags">გამორჩეული ნამუშევრები</h2>
                     <ul class="flex-tab">
-                        <li class="flex-tab-item">
-                            <a class="flex-tab-link" href="#">ყველა</a>
-                        </li>
-                        <li class="flex-tab-item">
-                            <a class="flex-tab-link" href="#">მობილური აპები</a>
-                        </li>
-                        <li class="flex-tab-item">
-                            <a class="flex-tab-link" href="#">ვებსაიტის დიზაინი</a>
-                        </li>
-                        <li class="flex-tab-item">
-                            <a class="flex-tab-link" href="#">ვებსაიტები</a>
-                        </li>
+                        <li class="tab active" data-filter="All">ყველა</li>
+                        <li class="tab" data-filter="Mob-App">მობილური აპები</li>
+                        <li class="tab" data-filter="Web-Des">ვებსაიტის დიზაინი</li>
+                        <li class="tab" data-filter="Web-Dev">ვებსაიტები</li>
                     </ul>
-                    <img class="works" src="img/work-done.svg" alt="">
+                    <div class="product">
+                        <div class="source" data-item="Mob-App">
+                            <img src="img\portfolio\mobile_app_1.svg" alt="mobile_app">
+                        </div>
+                        <div class="source" data-item="Web-Des">
+                            <img src="img\portfolio\Website_Design_1.svg" alt="Website_Design_1">
+                        </div>
+                        <div class="source" data-item="Web-Des">
+                            <img src="img\portfolio\Website_Design_2.svg" alt="Website_Design_2">
+                        </div>
+                        <div class="source" data-item="Web-Des">
+                            <img src="img\portfolio\Website_Design_3.svg" alt="Website_Design_3">
+                        </div>
+                        <div class="source" data-item="Web-Des">
+                            <img src="img\portfolio\Website_Design_4.svg" alt="Website_Design_4">
+                        </div>
+                        <div class="source" data-item="Web-Dev">
+                            <img src="img\portfolio\Website_development_1.svg" alt="Website_development">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -225,8 +250,9 @@
                         <div class="con-line">
                             <div class="name ">
                                 <label for="name">სახელი</label>
-                                <input type="text" placeholder=" სახელი" id="name">
+                                <input type="text" placeholder=" სახელი" id="name" required>
                             </div>
+
                             <div class="subject">
                                 <label for="subject">თემა</label>
                                 <input type="text" placeholder="თემა" id="subject">
@@ -234,15 +260,17 @@
                         </div>
 
                         <div class="mail">
-                            <label for="email">ელ.ფოსტა</label>
-                            <input type="email" placeholder="შეიყვანე შენი მეილი" id="email">
+                            <label for="email_id">ელ.ფოსტა</label>
+                            <input id="email_id" type="email" placeholder="შეიყვანე შენი მეილი" required>
                         </div>
+
                         <div class="contact-form ">
-                            <label for="textarea">შეტყობინება</label>
-                            <textarea name="textarea" id="textarea" cols="60" rows="2"></textarea>
+                            <label for="message">შეტყობინება</label>
+                            <textarea id="message" cols="60" rows="2"></textarea>
                         </div>
+
                         <div class="submit">
-                            <button class="CV" type="submit" value="ok">გაგზავნა</button>
+                            <button class="CV" onclick="SendMail()">გაგზავნა</button>
                         </div>
                     </form>
                 </div>
@@ -313,9 +341,6 @@
             </div>
         </div>
     </footer>
-
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>
